@@ -27,14 +27,12 @@ I have contributed to various open-source projects and been involved in various 
 ## Contact Me
 
 If you have questions, suggestions, or just want to connect with me, you can find me on :
-- [![LinkedIn](https://raw.githubusercontent.com/mzjp2/mzjp2/master/icons/linkedin.svg)](https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/)
-- 
-.
+- [![LinkedIn](https://www.example.com/kaggle-icon.png)](https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/)
+- [![Kaggle](https://www.example.com/kaggle-icon.png)](https://www.kaggle.com/lorenzoarcioni)
+- [![Instagram](https://www.example.com/instagram-icon.png)](https://www.instagram.com/lorenzo_arcioni/)
 
 ## Acknowledgments
 
 Thank you for visiting my GitHub profile! I hope you find something interesting in my projects. I look forward to connecting and collaborating in the future.
 
 Happy coding! 🚀
-
-
