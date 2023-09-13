@@ -16,7 +16,7 @@ In my repository, you will find a variety of projects and contributions ranging 
 
 ## Key Projects
 
-- [Project Name 1](link_to_project_1): Brief description of the project.
+- [HPC-T-Annotator](link_to_project_1): Brief description of the project.
 - [Project Name 2](link_to_project_2): Brief description of the project.
 - [Project Name 3](link_to_project_3): Brief description of the project.
 
