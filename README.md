@@ -16,17 +16,18 @@ In my repository, you will find a variety of projects and contributions ranging 
 
 ## Key Projects
 
-- [HPC-T-Annotator](link_to_project_1): Brief description of the project.
-- [Project Name 2](link_to_project_2): Brief description of the project.
-- [Project Name 3](link_to_project_3): Brief description of the project.
+- [HPC-T-Annotator](https://github.com/lorenzo-arcioni/HPC-T-Annotator): Parallelization tool for bioinformatics alignment softwares.
+- [Identifying Age-Related Conditions]([link_to_project_2](https://github.com/lorenzo-arcioni/icr-identify-age-related-conditions)): Kaggle competition (Silver medal 🥈).
+- [Water Potability](https://github.com/lorenzo-arcioni/water-potability): Data Analysis and Machine Learning Modeling for water potability.
 
 ## Contributions
 
-I have contributed to various open-source projects and been involved in [specify your notable or significant contributions]. Collaboration is an important part of my approach to the software world, and I'm always interested in new opportunities to contribute to exciting projects.
+I have contributed to various open-source projects and been involved in various Machine Learning competitions. Collaboration is an important part of my approach to the software world, and I'm always interested in new opportunities to contribute to exciting projects.
 
 ## Contact Me
 
-If you have questions, suggestions, or just want to connect with me, you can find me on [links to your social profiles or contact channels].
+If you have questions, suggestions, or just want to connect with me, you can find me on [![LinkedIn](https://www.example.com/linkedin-icon.png)]([https://www.linkedin.com/in/tuo-nome/](https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/))
+.
 
 ## Acknowledgments
 
