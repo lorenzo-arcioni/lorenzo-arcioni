@@ -27,7 +27,7 @@ I have contributed to various open-source projects and been involved in various 
 ## Contact Me
 
 If you have questions, suggestions, or just want to connect with me, you can find me on :
-- [![LinkedIn](https://icons8.com/icon/8808/linkedin)](https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/)
+- [![LinkedIn](https://raw.githubusercontent.com/mzjp2/mzjp2/master/icons/linkedin.svg)](https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/)
 - 
 .
 
