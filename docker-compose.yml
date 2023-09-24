@@ -15,7 +15,7 @@ services:
 
     # Any ports listed using `ports` will be exposed to the outside world
     ports:
-      - "9090:80"
+      - "8080:80"
 
     # Mount the container log directory to the local log directory
     # Consider changing this to /var/log/nginx:/var/log/nginx in production
