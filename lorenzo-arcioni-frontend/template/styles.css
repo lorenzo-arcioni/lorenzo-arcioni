@@ -239,6 +239,10 @@ footer {
         text-align: center;
     }
 
+    .school-name p{
+        text-align: left;
+    }
+
     .experience-list {
         list-style: none; padding-right: 30px;padding-left: 30px;
     }
