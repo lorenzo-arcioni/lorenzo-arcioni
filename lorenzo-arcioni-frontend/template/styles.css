@@ -67,7 +67,6 @@ h2 {
 
 .name h1 {
     overflow: hidden;
-    border-right: .15em solid rgba(255, 255, 255, 0);
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .10em;
