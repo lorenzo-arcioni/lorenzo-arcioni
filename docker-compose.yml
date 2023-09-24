@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+
+  nginx:
+
+    # Build the nginx service using the Dockerfile in the nginx directory
+    build: ./nginx
+
+    # Give our nginx container a friendly name
+    container_name: lorenzo-arcioni-nginx
+
+    # Instruct Docker to always restart the service
+    restart: always
+
+    # Any ports listed using `ports` will be exposed to the outside world
+    ports:
+      - "9090:80"
+
+    # Mount the container log directory to the local log directory
+    # Consider changing this to /var/log/nginx:/var/log/nginx in production
+    # Just make sure the directory exists before running docker-compose up --build
+    volumes:
+      - ./log/nginx:/var/log/nginx
+      - ./lorenzo-arcioni-frontend/template:/etc/nginx/html/
