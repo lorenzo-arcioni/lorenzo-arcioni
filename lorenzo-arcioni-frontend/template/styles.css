@@ -12,12 +12,12 @@ body {
 }
 
 hr {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .container {
     max-width: 70%;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 20px;
 }
 
@@ -47,7 +47,7 @@ h2 {
     color: #fff;
     font-size: 35px;
     text-decoration: none;
-    margin-right: 70px;
+    margin-right: 50px;
 
     animation:
         entrance 3s ease-in-out,
@@ -201,6 +201,7 @@ footer {
     .container {
         padding: 5px; /* Riduci ulteriormente il padding per dispositivi mobili */
         max-width: 95%;
+        margin: auto auto;
     }
 
     nav ul li {
@@ -225,8 +226,8 @@ footer {
     }
 
     .social a {
-        padding-left:  50px;
-        padding-right: 50px;
+        padding-left:  30px;
+        padding-right: 30px;
         margin-right: 0;
     }
 
