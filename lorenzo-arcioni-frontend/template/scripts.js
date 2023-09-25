@@ -17,10 +17,10 @@ function Writer(text, speed, id) {
   });
 }
 
-var about = "Passionate about the limitless possibilities at the intersection of data science, machine learning, and\
-bioinformatics, I am a tech-savvy guy with a profound interest in solving complex problems through\
-innovative approaches. With a robust background in parallel computing, algorithm development, and a deep\
-affection for Linux operating systems, I thrive in environments that demand a blend of technical prowess and\
+var about = "Passionate about the limitless possibilities at the intersection of data science, machine learning and \
+bioinformatics. I am a tech-savvy guy with a profound interest in solving complex problems through \
+innovative approaches. With a robust background in parallel computing, algorithm development, and a deep \
+affection for Linux operating systems, I thrive in environments that demand a blend of technical prowess and \
 creative thinking.";
 
 var education = `<ul class="education-list" style="list-style: none; padding: 10px;">
