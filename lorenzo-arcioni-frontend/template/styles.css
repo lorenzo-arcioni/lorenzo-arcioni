@@ -224,6 +224,7 @@ footer {
 
 .experience-date {
     max-width: 200px;
+    min-width: 100px;
 }
 
 .mobile_subtitle {
