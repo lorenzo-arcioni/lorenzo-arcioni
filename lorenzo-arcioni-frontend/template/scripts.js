@@ -53,7 +53,7 @@ var education = `<ul class="education-list" style="list-style: none; padding: 10
 </li>
 </ul>`;
 
-var experience = `<ul class="experience-list">
+var experience_1 = `<ul class="experience-list" style="padding-right: 30px;padding-left: 30px;">
 <li class="experience-item">
     <span class="details">
         <p calss="experience_where" style="font-weight: bold; flex: 1; font-size: 20px">Sapienza - Computer Science department</p>
@@ -113,7 +113,7 @@ var certification_4 = `<h3 style="font-size: 20px;">CISCO CCNA</h3>
 // Esegui le funzioni in parallelo utilizzando Promise.all()
 Promise.all([Writer(about,      20, "demo"),
              Writer(education,  2, "education_p"), 
-             Writer(experience, 2, "experience_p"), 
+             Writer(experience_1, 2, "experience_p"), 
              Writer(project_1,  1, "project_1"), 
              Writer(project_2,  5, "project_2"),
              Writer(project_3,  1, "project_3"),
