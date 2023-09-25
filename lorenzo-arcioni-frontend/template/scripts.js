@@ -68,7 +68,7 @@ var experience_1 = `<ul class="experience-list" style="padding-right: 30px;paddi
 
 var project_1 = `<h3 style="font-size: 20px;padding-right: 30px;padding-left: 30px;">Identifying Age-Related Conditions (ICR)</h3>
 <p style="font-size: 16px;padding-right: 30px;padding-left: 30px;">&quot;Identifying Age-Related Conditions&quot; is a Kaggle competition. I am proud to share that I achieved a Silver Medal, ranking in the top 2% of the competition leaderboard.</p>
-<p style="font-size: 16px;padding-right: 30px;padding-left: 30px;">The goal of the competition is to use machine learning to predict whether a person has any of three specific medical conditions. Participants are tasked with creating a model trained on measurements of health characteristics to make these predictions. The conditions are categorized into two classes:</p>
+<p style="font-size: 16px;padding-right: 30px;padding-left: 30px; padding-top: 10px">The goal of the competition is to use machine learning to predict whether a person has any of three specific medical conditions. Participants are tasked with creating a model trained on measurements of health characteristics to make these predictions. The conditions are categorized into two classes:</p>
 <ul style="font-size: 16px; margin-top: 10px; text-align: left">
   <li style="margin-left: 75px;">Class 0: No medical conditions</li>
   <li style="margin-left: 75px;">Class 1: At least one of the 3 medical conditions</li>
