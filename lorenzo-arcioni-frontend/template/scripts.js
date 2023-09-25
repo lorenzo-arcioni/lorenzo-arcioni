@@ -74,7 +74,7 @@ var project_1 = `<h3 style="font-size: 20px;padding-right: 30px;padding-left: 30
   <li style="margin-left: 75px;">Class 1: At least one of the 3 medical conditions</li>
 </ul>
 <br>
-<p style="font-size: 16px; padding-right: 30px;padding-left: 30px;">This competition is crucial as it aims to streamline and simplify the process of identifying these medical conditions, which typically involves a lengthy and intrusive data collection process from patients. Our predictive models aim to expedite this process while ensuring patient privacy by utilizing essential characteristics related to the conditions and encoding them effectively.</p>
+<p style="font-size: 16px; padding-right: 30px;padding-left: 30px;">This competition is crucial as it aims to streamline and simplify the process of identifying these medical conditions, which typically involves a lengthy and intrusive data collection process from patients. My predictive model aim to expedite this process while ensuring patient privacy by utilizing essential characteristics related to the conditions and encoding them effectively.</p>
 <p style="font-size: 16px; padding-right: 30px;padding-left: 30px; padding-top: 10px">By participating in this competition, I contributed to the advancement of medical research by aiding in the discovery of the relationship between various health characteristics and potential patient conditions.
 <br><br></p><a class="project_link_icon" href="https://github.com/lorenzo-arcioni/icr-identify-age-related-conditions" target="_blank"><i class="fa fa-github"></i></a></p>`;
 
