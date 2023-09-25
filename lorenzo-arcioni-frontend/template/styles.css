@@ -95,7 +95,50 @@ h2 {
     display: block;
 }
 
+.publication{
+    padding-right: 30px;
+    padding-left: 30px;
+}
 
+.button {
+    margin-bottom: -2px;
+    background-color: #ffffff;
+    color: #333;
+    padding : 0px 0px;
+    border-radius: 60%;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    text-indent: -1px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    overflow: hidden; /* Aggiungiamo overflow:hidden per nascondere il contenuto iniziale */
+    width: 20px; /* Larghezza iniziale del pulsante */
+    transition: width 0.2s ease-in-out, /* Aggiungiamo una transizione alla larghezza */
+                border-radius 0.2s ease-in-out;
+    animation: bounce 1s infinite;
+}
+
+.button::before {
+    content: "C";
+    color: #333;
+    display: inline;
+    white-space: nowrap;
+}
+
+.button:hover {
+    width: 145px; /* Espandiamo la larghezza durante l'hover */
+    border-radius: 10% / 50%;
+    text-indent: -3px;
+    animation: none;
+}
+
+.button:hover::before {
+    content: "Credentials"; /* Mostra il testo durante l'hover */
+}
+
+  
 /* Animazione per il paragrafo */
 @keyframes typing {
     from { width: 0; }
