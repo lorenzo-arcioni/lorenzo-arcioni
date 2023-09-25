@@ -243,6 +243,10 @@ footer {
     padding-left: 30px;
 }
 
+.profile-img {
+    border-radius: 50% 50% 50% 50%;
+}
+
 @media (max-width: 1000px) {
     .container {
         padding: 5px; /* Riduci ulteriormente il padding per dispositivi mobili */
@@ -334,4 +338,5 @@ footer {
     .certification h3 a{
         display: none;
     }
+
 }
