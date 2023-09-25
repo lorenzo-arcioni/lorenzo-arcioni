@@ -239,6 +239,10 @@ footer {
     }
 }
 
+.certification {
+    padding-left: 30px;
+}
+
 @media (max-width: 1000px) {
     .container {
         padding: 5px; /* Riduci ulteriormente il padding per dispositivi mobili */
@@ -320,6 +324,14 @@ footer {
     }
 
     .subtitle {
+        display: none;
+    }
+
+    .certification {
+        padding-left: 0px;
+    }
+
+    .certification h3 a{
         display: none;
     }
 }
