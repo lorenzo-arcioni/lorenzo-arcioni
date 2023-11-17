@@ -19,7 +19,7 @@ In my repository, you will find a variety of projects and contributions ranging 
 - [HPC-T-Annotator](https://github.com/lorenzo-arcioni/HPC-T-Annotator): Parallelization tool for bioinformatics alignment softwares.
 - [HPC-T-Annotator_web](http://raganella.deb.unitus.it:49152/): Web interface for generating dynamic softwares.
 - [Identifying Age-Related Conditions](https://github.com/lorenzo-arcioni/icr-identify-age-related-conditions): Kaggle competition (Silver medal 🥈).
-- [Water Potability](https://github.com/lorenzo-arcioni/water-potability): Data Analysis and Machine Learning Modeling for water potability.
+- [Water Potability](https://github.com/lorenzo-arcioni/water-potability-analysis): Data Analysis and Machine Learning Modeling for water potability.
 
 ## Contributions
 
