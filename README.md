@@ -1,6 +1,6 @@
 # Welcome to My GitHub Repository
 
-Hello, I'm Lorenzo, and this is my space on GitHub! I'm passionate about Data science and Machine learning, and here you can find some of my projects and contributions.
+Hello, I'm Lorenzo, and this is my space on GitHub! I'm passionate about Data science, Machine learningand Bioinformatics; and here you can find some of my projects and contributions.
 
 ## Who am I?
 
