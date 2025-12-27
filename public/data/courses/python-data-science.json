@@ -1,0 +1,298 @@
+{
+  "title": "Python per Data Science",
+  "description": "Corso pratico e intensivo su Python applicato alla Data Science",
+  "full_description": "Questo corso completo ti guiderà attraverso l'intero ecosistema Python per Data Science. Imparerai a manipolare dati con pandas, eseguire calcoli numerici con NumPy, creare visualizzazioni professionali con Matplotlib e Seaborn, e molto altro.\n\nIl corso è strutturato con un approccio pratico: ogni concetto teorico viene immediatamente applicato a casi d'uso reali attraverso progetti hands-on. Alla fine del corso sarai in grado di affrontare autonomamente progetti di analisi dati complessi.",
+  "instructor": "Lorenzo Arcioni",
+  "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
+  "instructor_image": "/images/profile.jpg",
+  "duration": "10 settimane",
+  "level": "Principiante/Intermedio",
+  "category": "Data Science",
+  "price": "€499",
+  "image_url": "https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg",
+  "learning_objectives": [
+    {
+      "objective": "Manipolazione dati con Pandas",
+      "description": "Padroneggiare DataFrame, Series e operazioni avanzate di data wrangling"
+    },
+    {
+      "objective": "Calcolo numerico con NumPy",
+      "description": "Array multidimensionali, operazioni vettoriali e algebra lineare"
+    },
+    {
+      "objective": "Visualizzazione dati",
+      "description": "Creare grafici professionali con Matplotlib e Seaborn"
+    },
+    {
+      "objective": "Analisi Esplorativa (EDA)",
+      "description": "Tecniche per esplorare, pulire e comprendere i dati"
+    },
+    {
+      "objective": "Progetti reali",
+      "description": "Applicare le competenze su dataset del mondo reale"
+    },
+    {
+      "objective": "Best practices",
+      "description": "Codice pulito, efficiente e professionale"
+    }
+  ],
+  "prerequisites": [
+    {
+      "title": "Conoscenze base di Python",
+      "description": "Variabili, funzioni, cicli, liste e dizionari",
+      "is_required": true
+    },
+    {
+      "title": "Familiarità con matematica di base",
+      "description": "Algebra, statistica descrittiva",
+      "is_required": false
+    }
+  ],
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduzione e Setup",
+      "description": "Configurazione ambiente di lavoro e introduzione agli strumenti",
+      "estimated_hours": "2 ore",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Benvenuto e panoramica del corso",
+          "description": "Presentazione del programma e degli obiettivi",
+          "duration": "15 min",
+          "is_free": true
+        },
+        {
+          "id": 2,
+          "title": "Setup ambiente Python",
+          "description": "Installazione Anaconda, Jupyter e librerie essenziali",
+          "duration": "30 min",
+          "is_free": true
+        },
+        {
+          "id": 3,
+          "title": "Jupyter Notebook: guida pratica",
+          "description": "Come utilizzare Jupyter per analisi dati",
+          "duration": "25 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "NumPy Fondamenti",
+      "description": "Array multidimensionali e operazioni numeriche",
+      "estimated_hours": "6 ore",
+      "lessons": [
+        {
+          "id": 4,
+          "title": "Introduzione a NumPy",
+          "description": "Cos'è NumPy e perché è fondamentale",
+          "duration": "20 min",
+          "is_free": false
+        },
+        {
+          "id": 5,
+          "title": "Array e matrici",
+          "description": "Creazione e manipolazione di array NumPy",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 6,
+          "title": "Operazioni vettoriali",
+          "description": "Broadcasting, operazioni elemento per elemento",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 7,
+          "title": "Indexing e slicing avanzato",
+          "description": "Tecniche per accedere e modificare array",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 8,
+          "title": "Funzioni statistiche",
+          "description": "Calcolo di media, mediana, deviazione standard",
+          "duration": "30 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pandas per Data Wrangling",
+      "description": "Manipolazione e trasformazione dati con pandas",
+      "estimated_hours": "10 ore",
+      "lessons": [
+        {
+          "id": 9,
+          "title": "Introduzione a Pandas",
+          "description": "Series e DataFrame: le strutture fondamentali",
+          "duration": "30 min",
+          "is_free": false
+        },
+        {
+          "id": 10,
+          "title": "Caricamento dati",
+          "description": "Leggere CSV, Excel, JSON e database",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 11,
+          "title": "Selezione e filtering",
+          "description": "Query e filtri su DataFrame",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 12,
+          "title": "Gestione valori mancanti",
+          "description": "Identificare e gestire NaN values",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 13,
+          "title": "GroupBy e aggregazioni",
+          "description": "Operazioni di raggruppamento e aggregazione",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 14,
+          "title": "Merge e Join",
+          "description": "Combinare DataFrame multipli",
+          "duration": "45 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Visualizzazione Dati",
+      "description": "Creare grafici professionali per comunicare insights",
+      "estimated_hours": "8 ore",
+      "lessons": [
+        {
+          "id": 15,
+          "title": "Matplotlib basics",
+          "description": "Figure, axes e plot di base",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 16,
+          "title": "Personalizzazione grafici",
+          "description": "Colori, stili, labels e legends",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 17,
+          "title": "Seaborn per visualizzazioni statistiche",
+          "description": "Grafici più eleganti e informativi",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 18,
+          "title": "Heatmaps e correlazioni",
+          "description": "Visualizzare relazioni tra variabili",
+          "duration": "35 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Analisi Esplorativa dei Dati (EDA)",
+      "description": "Tecniche per comprendere e pulire i dati",
+      "estimated_hours": "6 ore",
+      "lessons": [
+        {
+          "id": 19,
+          "title": "Cosa è l'EDA e perché è importante",
+          "description": "Approccio sistematico all'analisi dati",
+          "duration": "25 min",
+          "is_free": false
+        },
+        {
+          "id": 20,
+          "title": "Statistica descrittiva",
+          "description": "Medie, percentili, distribuzioni",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 21,
+          "title": "Identificazione outliers",
+          "description": "Trovare e gestire valori anomali",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 22,
+          "title": "Feature engineering basics",
+          "description": "Creare nuove variabili dai dati esistenti",
+          "duration": "45 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Progetto Finale",
+      "description": "Applicare tutte le competenze su un progetto reale",
+      "estimated_hours": "8 ore",
+      "lessons": [
+        {
+          "id": 23,
+          "title": "Presentazione progetto",
+          "description": "Dataset e obiettivi del progetto finale",
+          "duration": "20 min",
+          "is_free": false
+        },
+        {
+          "id": 24,
+          "title": "Guida passo-passo",
+          "description": "Sviluppo del progetto con supporto",
+          "duration": "120 min",
+          "is_free": false
+        },
+        {
+          "id": 25,
+          "title": "Best practices e ottimizzazione",
+          "description": "Rendere il codice professionale",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 26,
+          "title": "Presentazione risultati",
+          "description": "Come comunicare i tuoi insights",
+          "duration": "30 min",
+          "is_free": false
+        }
+      ]
+    }
+  ],
+  "certification": true,
+  "certificate_description": "Riceverai un certificato digitale verificabile che attesta il completamento del corso e le competenze acquisite in Python per Data Science.",
+  "target_audience": [
+    "Aspiranti Data Scientist",
+    "Analisti che vogliono passare a Python",
+    "Sviluppatori che vogliono entrare nella Data Science",
+    "Studenti di informatica o statistica",
+    "Professionisti che lavorano con i dati"
+  ],
+  "tools_required": [
+    "Computer (Windows, Mac o Linux)",
+    "Connessione internet",
+    "Python 3.8+ (fornito tramite Anaconda)",
+    "4GB RAM minimo (8GB consigliato)"
+  ]
+}
