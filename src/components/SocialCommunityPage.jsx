@@ -75,28 +75,38 @@ const SocialCommunityPage = ({ onBack }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-violet-50 via-fuchsia-50 to-white">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-6xl">
         {/* Header */}
         <div className="mb-8 sm:mb-12">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 text-violet-600 hover:text-violet-700 font-semibold mb-4 sm:mb-6 group text-sm sm:text-base"
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium mb-4 sm:mb-6 text-sm sm:text-base"
           >
-            <ArrowLeft className="group-hover:-translate-x-1 transition-transform w-4 h-4 sm:w-5 sm:h-5" />
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             Torna alla home
           </button>
           
           <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-            <div className="p-2.5 sm:p-4 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-xl sm:rounded-2xl shadow-lg">
+            <div className="p-2.5 sm:p-4 bg-gray-900 rounded-lg">
               <Share2 className="text-white w-6 h-6 sm:w-10 sm:h-10" />
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Social & Community
             </h1>
           </div>
-          <p className="text-base sm:text-xl text-gray-600 sm:ml-20">
+          <p className="text-base sm:text-lg text-gray-600 sm:ml-20">
             Le mie attività nella community tech: articoli, progetti open-source e competizioni
+          </p>
+        </div>
+
+        {/* Hero Statement */}
+        <div className="mb-8 sm:mb-12 text-center space-y-4">
+          <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+            Condividere conoscenza per far crescere la community
+          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Open-source, articoli tecnici e competizioni: ogni contributo è un'opportunità per imparare insieme
           </p>
         </div>
 
@@ -105,9 +115,9 @@ const SocialCommunityPage = ({ onBack }) => {
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <Icon className="w-8 h-8 mx-auto mb-3 text-violet-600" />
-                <div className="text-3xl font-black text-gray-800 mb-1">{stat.value}</div>
+              <div key={index} className="bg-gray-50 border border-gray-200 rounded-lg p-6 text-center">
+                <Icon className="w-8 h-8 mx-auto mb-3 text-gray-900" />
+                <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
               </div>
             );
@@ -117,8 +127,8 @@ const SocialCommunityPage = ({ onBack }) => {
         {/* Medium Articles */}
         <div className="mb-8 sm:mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <BookOpen className="w-8 h-8 text-violet-600" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+            <BookOpen className="w-8 h-8 text-gray-900" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Articoli su Medium
             </h2>
           </div>
@@ -129,29 +139,29 @@ const SocialCommunityPage = ({ onBack }) => {
                 href={article.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden hover:border-gray-300 transition-colors"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={article.image}
                     alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm text-gray-800 text-xs font-bold rounded-full">
+                    <span className="inline-block px-3 py-1 bg-white text-gray-900 text-xs font-semibold rounded-full border border-gray-200">
                       {article.date} • {article.views} views
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-violet-600 transition-colors">
+                <div className="p-6 bg-white">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  <p className="text-gray-700 text-sm mb-4 line-clamp-2">
                     {article.excerpt}
                   </p>
-                  <div className="flex items-center text-violet-600 font-semibold group-hover:translate-x-2 transition-transform">
+                  <div className="flex items-center text-gray-900 font-semibold">
                     <span>Leggi l'articolo</span>
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </div>
@@ -164,7 +174,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://medium.com/@lorenzo.arcioni2000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white font-bold rounded-xl hover:bg-gray-900 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
             >
               Vedi tutti gli articoli su Medium
               <ExternalLink className="w-5 h-5" />
@@ -175,8 +185,8 @@ const SocialCommunityPage = ({ onBack }) => {
         {/* GitHub Projects */}
         <div className="mb-8 sm:mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <Github className="w-8 h-8 text-violet-600" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+            <Github className="w-8 h-8 text-gray-900" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Progetti Open-Source
             </h2>
           </div>
@@ -187,25 +197,25 @@ const SocialCommunityPage = ({ onBack }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border-l-4 border-violet-500"
+                className="bg-gray-50 rounded-lg p-6 border border-gray-200 hover:border-gray-300 transition-colors"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-lg font-bold text-gray-800 group-hover:text-violet-600 transition-colors flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 flex-1">
                     {project.name}
                   </h3>
                   <div className="flex items-center gap-1 text-yellow-500">
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
                     </svg>
-                    <span className="text-sm font-bold text-gray-700">{project.stars}</span>
+                    <span className="text-sm font-semibold text-gray-700">{project.stars}</span>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+                <p className="text-gray-700 text-sm mb-4">{project.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="px-3 py-1 bg-violet-100 text-violet-700 rounded-full text-xs font-semibold">
+                  <span className="px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200 rounded-full text-xs font-medium">
                     {project.language}
                   </span>
-                  <ExternalLink className="w-4 h-4 text-violet-600 group-hover:translate-x-1 transition-transform" />
+                  <ExternalLink className="w-4 h-4 text-gray-900" />
                 </div>
               </a>
             ))}
@@ -215,7 +225,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://github.com/lorenzo-arcioni"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 text-white font-bold rounded-xl hover:bg-gray-900 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
             >
               Vedi tutti i progetti su GitHub
               <ExternalLink className="w-5 h-5" />
@@ -226,8 +236,8 @@ const SocialCommunityPage = ({ onBack }) => {
         {/* Kaggle Achievements */}
         <div className="mb-8 sm:mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <Award className="w-8 h-8 text-violet-600" />
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+            <Award className="w-8 h-8 text-gray-900" />
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
               Competizioni Kaggle
             </h2>
           </div>
@@ -235,12 +245,12 @@ const SocialCommunityPage = ({ onBack }) => {
             {kaggleAchievements.map((achievement, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-2xl p-6 text-white shadow-xl"
+                className="bg-gray-50 rounded-lg border border-gray-200 p-6"
               >
                 <div className="text-5xl mb-4">{achievement.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{achievement.title}</h3>
-                <p className="text-lg font-semibold text-violet-100 mb-1">{achievement.achievement}</p>
-                <p className="text-sm text-violet-200">{achievement.rank}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{achievement.title}</h3>
+                <p className="text-lg font-medium text-gray-700 mb-1">{achievement.achievement}</p>
+                <p className="text-sm text-gray-600">{achievement.rank}</p>
               </div>
             ))}
           </div>
@@ -249,7 +259,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://www.kaggle.com/lorenzoarcioni"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 text-white font-bold rounded-xl hover:bg-blue-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
             >
               Vedi profilo Kaggle
               <ExternalLink className="w-5 h-5" />
@@ -257,12 +267,21 @@ const SocialCommunityPage = ({ onBack }) => {
           </div>
         </div>
 
+        {/* Philosophy */}
+        <div className="p-8 bg-gray-900 text-white rounded-lg mb-8">
+          <p className="text-lg leading-relaxed">
+            Credo fortemente nel valore della condivisione della conoscenza. Ogni progetto open-source, 
+            articolo o competizione rappresenta un'opportunità per contribuire alla community tech e 
+            crescere insieme. La collaborazione e il confronto sono fondamentali per l'innovazione.
+          </p>
+        </div>
+
         {/* CTA */}
-        <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-3xl p-6 sm:p-8 md:p-10 text-white text-center shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+        <div className="bg-gray-50 rounded-lg border-2 border-gray-200 p-6 sm:p-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Seguimi sui Social
           </h2>
-          <p className="text-base sm:text-lg mb-6 text-violet-100 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
             Condivido regolarmente contenuti su ML, Data Science e le mie esperienze in progetti reali. 
             Connetti con me per rimanere aggiornato!
           </p>
@@ -271,7 +290,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://www.linkedin.com/in/lorenzo-arcioni-216b921b5/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-violet-600 font-bold rounded-xl hover:bg-violet-50 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
@@ -280,7 +299,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://github.com/lorenzo-arcioni"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-violet-600 font-bold rounded-xl hover:bg-violet-50 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
             >
               <Github className="w-5 h-5" />
               GitHub
@@ -289,7 +308,7 @@ const SocialCommunityPage = ({ onBack }) => {
               href="https://medium.com/@lorenzo.arcioni2000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-violet-600 font-bold rounded-xl hover:bg-violet-50 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
             >
               <BookOpen className="w-5 h-5" />
               Medium

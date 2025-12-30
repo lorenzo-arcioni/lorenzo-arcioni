@@ -59,7 +59,7 @@ const CourseDetailPage = ({ courseId, onBack }) => {
   const calculateTotalLessons = (modules) => 
     modules?.reduce((total, m) => total + m.lessons.length, 0) || 0;
 
-  const handleBrochureSubmit = async (e) => {
+  const handleBrochureSubmit = (e) => {
     e.preventDefault();
     
     if (!acceptPrivacy) {
@@ -70,23 +70,22 @@ const CourseDetailPage = ({ courseId, onBack }) => {
     setIsSubmitting(true);
     
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Here you would normally send the email to your backend
-    console.log('Email submitted:', email);
-    console.log('Newsletter consent:', acceptNewsletter);
-    
-    setIsSubmitting(false);
-    setSubmitSuccess(true);
-    
-    // Close modal after 2 seconds and reset
     setTimeout(() => {
-      setShowBrochureModal(false);
-      setSubmitSuccess(false);
-      setEmail('');
-      setAcceptPrivacy(false);
-      setAcceptNewsletter(false);
-    }, 2000);
+      console.log('Email submitted:', email);
+      console.log('Newsletter consent:', acceptNewsletter);
+      
+      setIsSubmitting(false);
+      setSubmitSuccess(true);
+      
+      // Close modal after 2 seconds and reset
+      setTimeout(() => {
+        setShowBrochureModal(false);
+        setSubmitSuccess(false);
+        setEmail('');
+        setAcceptPrivacy(false);
+        setAcceptNewsletter(false);
+      }, 2000);
+    }, 1000);
   };
 
   if (isLoading) {
@@ -125,13 +124,11 @@ const CourseDetailPage = ({ courseId, onBack }) => {
       {/* Brochure Modal */}
       {showBrochureModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          {/* Backdrop */}
           <div 
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={() => !isSubmitting && setShowBrochureModal(false)}
           ></div>
           
-          {/* Modal */}
           <div className="relative bg-white rounded-lg p-6 sm:p-8 max-w-md w-full">
             <button
               onClick={() => !isSubmitting && setShowBrochureModal(false)}
@@ -142,7 +139,7 @@ const CourseDetailPage = ({ courseId, onBack }) => {
             </button>
             
             {!submitSuccess ? (
-              <>
+              <div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-3 bg-gray-100 rounded-lg">
                     <Download className="w-6 h-6 text-gray-900" />
@@ -156,73 +153,71 @@ const CourseDetailPage = ({ courseId, onBack }) => {
                   Inserisci il tuo indirizzo email per ricevere la brochure completa del corso.
                 </p>
                 
-                <form onSubmit={handleBrochureSubmit}>
-                  <div className="mb-4">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                      Email *
-                    </label>
+                <div className="mb-4">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    placeholder="tua@email.com"
+                    disabled={isSubmitting}
+                  />
+                </div>
+                
+                <div className="mb-4 space-y-3">
+                  <div className="flex items-start gap-2">
                     <input
-                      type="email"
-                      id="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      type="checkbox"
+                      id="privacy"
+                      checked={acceptPrivacy}
+                      onChange={(e) => setAcceptPrivacy(e.target.checked)}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                      placeholder="tua@email.com"
+                      className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
                       disabled={isSubmitting}
                     />
+                    <label htmlFor="privacy" className="text-sm text-gray-700">
+                      Accetto i <span className="text-gray-900 underline font-medium cursor-pointer">termini per il trattamento dei dati</span> *
+                    </label>
                   </div>
                   
-                  <div className="mb-4 space-y-3">
-                    <div className="flex items-start gap-2">
-                      <input
-                        type="checkbox"
-                        id="privacy"
-                        checked={acceptPrivacy}
-                        onChange={(e) => setAcceptPrivacy(e.target.checked)}
-                        required
-                        className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
-                        disabled={isSubmitting}
-                      />
-                      <label htmlFor="privacy" className="text-sm text-gray-700">
-                        Accetto i <a href="/privacy" target="_blank" className="text-gray-900 underline font-medium">termini per il trattamento dei dati</a> *
-                      </label>
-                    </div>
-                    
-                    <div className="flex items-start gap-2">
-                      <input
-                        type="checkbox"
-                        id="newsletter"
-                        checked={acceptNewsletter}
-                        onChange={(e) => setAcceptNewsletter(e.target.checked)}
-                        className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
-                        disabled={isSubmitting}
-                      />
-                      <label htmlFor="newsletter" className="text-sm text-gray-700">
-                        Voglio iscrivermi alla mailing list per ricevere aggiornamenti e contenuti esclusivi
-                      </label>
-                    </div>
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      checked={acceptNewsletter}
+                      onChange={(e) => setAcceptNewsletter(e.target.checked)}
+                      className="mt-1 w-4 h-4 text-gray-900 border-gray-300 rounded focus:ring-gray-900"
+                      disabled={isSubmitting}
+                    />
+                    <label htmlFor="newsletter" className="text-sm text-gray-700">
+                      Voglio iscrivermi alla mailing list per ricevere aggiornamenti e contenuti esclusivi
+                    </label>
                   </div>
-                  
-                  <button
-                    type="submit"
-                    disabled={isSubmitting || !acceptPrivacy}
-                    className="w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                        Invio in corso...
-                      </>
-                    ) : (
-                      <>
-                        <Download className="w-5 h-5" />
-                        Scarica Brochure
-                      </>
-                    )}
-                  </button>
-                </form>
-              </>
+                </div>
+                
+                <button
+                  onClick={handleBrochureSubmit}
+                  disabled={isSubmitting || !acceptPrivacy}
+                  className="w-full px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Invio in corso...
+                    </>
+                  ) : (
+                    <>
+                      <Download className="w-5 h-5" />
+                      Scarica Brochure
+                    </>
+                  )}
+                </button>
+              </div>
             ) : (
               <div className="text-center py-8">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -241,7 +236,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
       )}
 
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-6xl">
-        {/* Back Button */}
         <button
           onClick={onBack}
           className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium mb-6 text-sm sm:text-base"
@@ -253,7 +247,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Header */}
             <div className="space-y-4">
               <div className="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold border border-green-200">
                 {courseData.category}
@@ -291,7 +284,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             </div>
 
-            {/* Instructor */}
             {courseData.instructor && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
@@ -318,7 +310,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Full Description */}
             {courseData.full_description && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
@@ -330,7 +321,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Learning Objectives */}
             {courseData.learning_objectives && courseData.learning_objectives.length > 0 && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
@@ -357,7 +347,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Course Program */}
             {courseData.modules && courseData.modules.length > 0 && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2 flex items-center gap-2">
@@ -426,10 +415,9 @@ const CourseDetailPage = ({ courseId, onBack }) => {
             )}
           </div>
 
-          {/* Sidebar */}
+          {/* Sidebar - sticky solo su lg+ */}
           <div className="lg:col-span-1 space-y-6">
-            {/* CTA Card */}
-            <div className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden sticky top-6">
+            <div className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden lg:sticky lg:top-6">
               {courseData.image_url && (
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -476,7 +464,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             </div>
 
-            {/* Prerequisites */}
             {courseData.prerequisites && courseData.prerequisites.length > 0 && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4 flex items-center gap-2">
@@ -508,7 +495,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Target Audience */}
             {courseData.target_audience && courseData.target_audience.length > 0 && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4 flex items-center gap-2">
@@ -526,7 +512,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Tools Required */}
             {courseData.tools_required && courseData.tools_required.length > 0 && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4 flex items-center gap-2">
@@ -544,7 +529,6 @@ const CourseDetailPage = ({ courseId, onBack }) => {
               </div>
             )}
 
-            {/* Certification */}
             {courseData.certification && (
               <div className="bg-gray-50 rounded-lg border border-gray-200 p-6">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4 flex items-center gap-2">

@@ -81,75 +81,89 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-white">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-6xl">
         {/* Header */}
         <div className="mb-8 sm:mb-12">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold mb-4 sm:mb-6 group text-sm sm:text-base"
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium mb-4 sm:mb-6 text-sm sm:text-base"
           >
-            <ArrowLeft className="group-hover:-translate-x-1 transition-transform w-4 h-4 sm:w-5 sm:h-5" />
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             Torna alla home
           </button>
           
           <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-            <div className="p-2.5 sm:p-4 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl sm:rounded-2xl shadow-lg">
+            <div className="p-2.5 sm:p-4 bg-gray-900 rounded-lg">
               <Building2 className="text-white w-6 h-6 sm:w-10 sm:h-10" />
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               Formazione Aziendale
             </h1>
           </div>
-          <p className="text-base sm:text-xl text-gray-600 sm:ml-20">
+          <p className="text-base sm:text-lg text-gray-600 sm:ml-20">
             Workshop e percorsi formativi su misura per la tua organizzazione
           </p>
         </div>
 
         {/* Value Proposition */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 sm:p-8 md:p-10 text-white mb-8 sm:mb-12 shadow-2xl">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-            Perché scegliere la mia formazione aziendale?
-          </h2>
-          <p className="text-base sm:text-lg mb-6 text-blue-50 leading-relaxed">
-            Non offro semplici lezioni teoriche: creo <strong>esperienze formative intensive</strong> dove 
-            il tuo team acquisisce competenze concrete, immediatamente applicabili. Ogni corso è personalizzato 
-            sulle esigenze specifiche della tua azienda, con un approccio pratico che bilancia teoria solida 
-            e hands-on intensivo.
-          </p>
+        <div className="mb-8 sm:mb-12 space-y-6">
+          <div className="text-center space-y-4">
+            <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+              Formazione che genera competenze concrete, non solo certificati
+            </p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Ogni corso è personalizzato sulle esigenze della tua azienda, con un approccio 
+              pratico che bilancia teoria solida e hands-on intensivo
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <Target className="w-8 h-8 flex-shrink-0" />
-              <span className="font-semibold">Contenuti su misura</span>
+            <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <Target className="w-6 h-6 text-gray-900" />
+                <h3 className="text-lg font-semibold text-gray-900">Contenuti su misura</h3>
+              </div>
+              <p className="text-gray-700">
+                Workshop progettati sulle specifiche esigenze del tuo team e del tuo settore
+              </p>
             </div>
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <Users className="w-8 h-8 flex-shrink-0" />
-              <span className="font-semibold">Piccoli gruppi</span>
+            <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <Users className="w-6 h-6 text-gray-900" />
+                <h3 className="text-lg font-semibold text-gray-900">Piccoli gruppi</h3>
+              </div>
+              <p className="text-gray-700">
+                Sessioni con numeri ridotti per garantire attenzione individuale e interazione
+              </p>
             </div>
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
-              <Zap className="w-8 h-8 flex-shrink-0" />
-              <span className="font-semibold">Risultati rapidi</span>
+            <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <Zap className="w-6 h-6 text-gray-900" />
+                <h3 className="text-lg font-semibold text-gray-900">Risultati rapidi</h3>
+              </div>
+              <p className="text-gray-700">
+                Competenze immediatamente applicabili al termine di ogni sessione formativa
+              </p>
             </div>
           </div>
         </div>
 
         {/* Modalities */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
             Modalità di Erogazione
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {modalities.map((modality, index) => {
               const Icon = modality.icon;
               return (
-                <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="p-3 bg-blue-100 rounded-xl">
-                      <Icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800">{modality.title}</h3>
+                <div key={index} className="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Icon className="w-6 h-6 text-gray-900" />
+                    <h3 className="text-lg font-semibold text-gray-900">{modality.title}</h3>
                   </div>
-                  <p className="text-gray-600 mb-4">{modality.description}</p>
+                  <p className="text-gray-700 mb-4">{modality.description}</p>
                   <ul className="space-y-2">
                     {modality.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
@@ -166,37 +180,37 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
 
         {/* Training Options */}
         <div className="mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
             Workshop e Percorsi Disponibili
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {trainingOptions.map((training, index) => (
-              <div key={index} className="bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-6 text-white">
+              <div key={index} className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden">
+                <div className="p-6 bg-white border-b border-gray-200">
                   <div className="flex items-center gap-4 mb-3">
-                    <span className="text-5xl">{training.icon}</span>
-                    <h3 className="text-xl sm:text-2xl font-bold">{training.title}</h3>
+                    <span className="text-4xl">{training.icon}</span>
+                    <h3 className="text-xl font-semibold text-gray-900">{training.title}</h3>
                   </div>
-                  <p className="text-blue-50">{training.description}</p>
+                  <p className="text-gray-700">{training.description}</p>
                 </div>
                 
                 <div className="p-6">
                   <div className="grid grid-cols-2 gap-4 mb-4">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-600" />
-                      <span className="text-sm font-semibold text-gray-700">{training.duration}</span>
+                      <Clock className="w-4 h-4 text-gray-900" />
+                      <span className="text-sm font-medium text-gray-700">{training.duration}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-blue-600" />
-                      <span className="text-sm font-semibold text-gray-700">{training.audience}</span>
+                      <Users className="w-4 h-4 text-gray-900" />
+                      <span className="text-sm font-medium text-gray-700">{training.audience}</span>
                     </div>
                   </div>
                   
                   <div className="mb-4">
-                    <p className="text-xs font-bold text-gray-700 mb-2">Argomenti principali:</p>
+                    <p className="text-xs font-semibold text-gray-900 mb-2">Argomenti principali:</p>
                     <div className="flex flex-wrap gap-2">
                       {training.topics.map((topic, idx) => (
-                        <span key={idx} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">
+                        <span key={idx} className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium border border-blue-200">
                           {topic}
                         </span>
                       ))}
@@ -205,7 +219,7 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
                   
                   <button
                     onClick={() => onCourseSelect(training.id)}
-                    className="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm font-semibold rounded-xl hover:from-blue-600 hover:to-indigo-600 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-900 text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition-colors"
                   >
                     Scopri di più
                   </button>
@@ -215,9 +229,19 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
           </div>
         </div>
 
+        {/* Philosophy */}
+        <div className="p-8 bg-gray-900 text-white rounded-lg mb-8">
+          <p className="text-lg leading-relaxed">
+            Il mio approccio formativo unisce rigore scientifico e pragmatismo: ogni sessione è 
+            fondata su solide basi teoriche ma orientata a risolvere problemi reali. Non offro 
+            scorciatoie o formule magiche, ma competenze autentiche che il tuo team potrà 
+            applicare immediatamente.
+          </p>
+        </div>
+
         {/* CTA Section */}
-        <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl p-6 sm:p-8 md:p-10 text-center border-2 border-blue-200">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+        <div className="bg-gray-50 rounded-lg p-6 sm:p-8 text-center border-2 border-gray-200">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Interessato? Parliamone!
           </h2>
           <p className="text-base sm:text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
@@ -227,7 +251,7 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:lorenzo.arcioni2000@gmail.com?subject=Richiesta Formazione Aziendale"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors"
             >
               Richiedi Preventivo
             </a>
@@ -240,7 +264,7 @@ const CorporateTrainingPage = ({ onBack, onCourseSelect }) => {
                   document.getElementById('contatti')?.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
               }}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white border-2 border-gray-900 text-gray-900 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
             >
               Prenota Consulenza Gratuita
             </a>

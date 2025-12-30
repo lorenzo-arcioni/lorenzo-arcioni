@@ -44,28 +44,38 @@ const ProjectsPage = ({ onBack }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-white">
+    <div className="min-h-screen bg-white">
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-6xl">
         {/* Header */}
         <div className="mb-8 sm:mb-12">
           <button
             onClick={onBack}
-            className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold mb-4 sm:mb-6 group text-sm sm:text-base"
+            className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium mb-4 sm:mb-6 text-sm sm:text-base"
           >
-            <ArrowLeft className="group-hover:-translate-x-1 transition-transform w-4 h-4 sm:w-5 sm:h-5" />
+            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             Torna alla home
           </button>
           
           <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-            <div className="p-2.5 sm:p-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl sm:rounded-2xl shadow-lg">
+            <div className="p-2.5 sm:p-4 bg-gray-900 rounded-lg">
               <Rocket className="text-white w-6 h-6 sm:w-10 sm:h-10" />
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-800">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
               I Miei Progetti
             </h1>
           </div>
-          <p className="text-base sm:text-xl text-gray-600 sm:ml-20">
+          <p className="text-base sm:text-lg text-gray-600 sm:ml-20">
             Una selezione dei miei progetti più significativi in Machine Learning e Data Science
+          </p>
+        </div>
+
+        {/* Hero Statement */}
+        <div className="mb-8 sm:mb-12 text-center space-y-4">
+          <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+            Dal codice alla soluzione: progetti che risolvono problemi reali
+          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Ogni progetto rappresenta un'opportunità per applicare teoria solida a sfide concrete
           </p>
         </div>
 
@@ -74,27 +84,26 @@ const ProjectsPage = ({ onBack }) => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] group"
+              className="bg-gray-50 rounded-lg border border-gray-200 overflow-hidden"
             >
               <div className="flex flex-col">
                 {/* Image */}
                 <div className="relative overflow-hidden h-48 sm:h-56">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
                   <img 
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 
                 {/* Content */}
-                <div className="p-4 sm:p-6 md:p-8">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-3 sm:mb-4 group-hover:text-purple-600 transition-colors">
+                <div className="p-4 sm:p-6 md:p-8 bg-white">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-3 sm:mb-4">
                     {project.title}
                   </h3>
                   
                   {project.badge && (
-                    <span className={`inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4 ${project.badgeColor}`}>
+                    <span className={`inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4 ${project.badgeColor} border border-gray-300`}>
                       {project.badge}
                     </span>
                   )}
@@ -106,7 +115,7 @@ const ProjectsPage = ({ onBack }) => {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                     {project.tags.map((tag, i) => (
-                      <span key={i} className="px-2 sm:px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs sm:text-sm font-semibold">
+                      <span key={i} className="px-2 sm:px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs sm:text-sm font-medium border border-blue-200">
                         {tag}
                       </span>
                     ))}
@@ -118,7 +127,7 @@ const ProjectsPage = ({ onBack }) => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm sm:text-base font-semibold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                      className="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-green-600 text-white text-sm sm:text-base font-semibold rounded-lg hover:bg-green-700 transition-colors"
                     >
                       Vedi su GitHub
                       <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -129,7 +138,7 @@ const ProjectsPage = ({ onBack }) => {
                         href={project.article}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white border-2 border-purple-500 text-purple-600 text-sm sm:text-base font-semibold rounded-xl hover:bg-purple-50 transition-all duration-300"
+                        className="inline-flex items-center justify-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white border-2 border-gray-900 text-gray-900 text-sm sm:text-base font-semibold rounded-lg hover:bg-gray-50 transition-colors"
                       >
                         Leggi articolo
                         <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -140,6 +149,16 @@ const ProjectsPage = ({ onBack }) => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Philosophy */}
+        <div className="mt-8 sm:mt-12 p-8 bg-gray-900 text-white rounded-lg">
+          <p className="text-lg leading-relaxed">
+            Ogni progetto è un'opportunità per trasformare teoria in pratica. Dal machine learning 
+            applicato alla sanità, all'High Performance Computing per la bioinformatica, fino alla 
+            computer vision per sfide ambientali: ogni soluzione è guidata da rigore metodologico 
+            e orientata a risultati concreti e misurabili.
+          </p>
         </div>
       </div>
     </div>

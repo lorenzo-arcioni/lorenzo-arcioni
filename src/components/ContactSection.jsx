@@ -20,15 +20,15 @@ const ContactSection = () => {
         <Mail className="text-gray-900" size={32} />
         Contatti
       </h2>
-
+      
       <div className="space-y-6">
         {/* Email */}
         <a 
           href="mailto:lorenzo.arcioni2000@gmail.com"
-          className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-900 transition-colors"
+          className="flex items-center gap-3 p-4 bg-blue-50 rounded-lg border border-blue-200 hover:border-blue-600 transition-colors"
         >
-          <Mail className="text-gray-700" size={24} />
-          <span className="font-medium text-gray-900">lorenzo.arcioni2000@gmail.com</span>
+          <Mail className="text-blue-600" size={24} />
+          <span className="font-medium text-blue-900">lorenzo.arcioni2000@gmail.com</span>
         </a>
 
         {/* WhatsApp */}
@@ -36,10 +36,10 @@ const ContactSection = () => {
           href="https://wa.me/393296986474?text=Ciao%2C%20vorrei%20prenotare%20una%20consulenza."
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-900 transition-colors"
+          className="flex items-center gap-3 p-4 bg-green-50 rounded-lg border border-green-200 hover:border-green-600 transition-colors"
         >
-          <MessageCircle className="text-gray-700" size={24} />
-          <span className="font-medium text-gray-900">Apri la chat su WhatsApp</span>
+          <MessageCircle className="text-green-600" size={24} />
+          <span className="font-medium text-green-900">Apri la chat su WhatsApp</span>
         </a>
 
         {/* Calendly intro */}
