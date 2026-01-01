@@ -634,5 +634,43 @@
     "Google Colab Pro (per GPU cloud)",
     "16GB RAM minimo (32GB consigliato)",
     "Esperienza solida con ML e Python"
-  ]
+  ],
+  "average_rating": 4.9,
+"reviews": [
+  {
+    "student_name": "Luca Galli",
+    "rating": 5,
+    "date": "14 dicembre 2024",
+    "comment": "Il corso più completo su Deep Learning che abbia mai visto. Copre tutto: CNN, RNN, Transformers, GANs. La spiegazione di backpropagation è la migliore che abbia trovato. I progetti sono sfidanti ma ti preparano per il mondo reale. Ora lavoro come Deep Learning Engineer.",
+    "verified": true
+  },
+  {
+    "student_name": "Simona Rizzo",
+    "rating": 5,
+    "date": "7 dicembre 2024",
+    "comment": "Corso avanzato ma spiegato magistralmente. La sezione su Transformers è aggiornata e dettagliata. Apprezzo molto la copertura sia di TensorFlow che PyTorch. I moduli su optimization e regularization sono oro per chi vuole davvero padroneggiare il training di reti neurali.",
+    "verified": true
+  },
+  {
+    "student_name": "Paolo Mancini",
+    "rating": 5,
+    "date": "30 novembre 2024",
+    "comment": "Venivo da un corso base di ML e questo mi ha portato a un livello completamente nuovo. La teoria è approfondita ma sempre con esempi pratici. Il capstone project mi ha dato un portfolio piece che ha impressionato ai colloqui. Investimento che si ripaga subito.",
+    "verified": true
+  },
+  {
+    "student_name": "Laura Gentile",
+    "rating": 4,
+    "date": "23 novembre 2024",
+    "comment": "Contenuto eccellente e molto denso. Serve una GPU per alcuni progetti (ho usato Colab Pro). La parte su deployment è particolarmente utile. Unico suggerimento: sarebbe bello avere più esercizi su debugging di neural networks. Nel complesso, altamente raccomandato.",
+    "verified": true
+  },
+  {
+    "student_name": "Matteo Pagano",
+    "rating": 5,
+    "date": "16 novembre 2024",
+    "comment": "Il miglior corso su Deep Learning in italiano, forse anche migliori di alcuni in inglese che ho provato. Lorenzo va in profondità senza perdere chiarezza. La progressione dai fondamenti alle architetture moderne è perfetta. Dopo questo corso mi sento sicuro di affrontare qualsiasi progetto DL.",
+    "verified": true
+  }
+]
 }

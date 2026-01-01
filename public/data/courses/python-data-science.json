@@ -1,14 +1,14 @@
 {
   "title": "Python per Data Science",
-  "description": "Corso pratico e intensivo su Python applicato alla Data Science",
-  "full_description": "Questo corso completo ti guiderà attraverso l'intero ecosistema Python per Data Science. Imparerai a manipolare dati con pandas, eseguire calcoli numerici con NumPy, creare visualizzazioni professionali con Matplotlib e Seaborn, e molto altro.\n\nIl corso è strutturato con un approccio pratico: ogni concetto teorico viene immediatamente applicato a casi d'uso reali attraverso progetti hands-on. Alla fine del corso sarai in grado di affrontare autonomamente progetti di analisi dati complessi.",
+  "description": "Corso completo e professionale su Python applicato alla Data Science",
+  "full_description": "Questo corso completo ti guiderà attraverso l'intero ecosistema Python per Data Science. Imparerai a manipolare dati con pandas, eseguire calcoli numerici con NumPy, creare visualizzazioni professionali con Matplotlib e Seaborn, applicare tecniche statistiche avanzate, lavorare con serie temporali, gestire big data e molto altro.\n\nIl corso è strutturato con un approccio pratico: ogni concetto teorico viene immediatamente applicato a casi d'uso reali attraverso progetti hands-on. Alla fine del corso sarai in grado di affrontare autonomamente progetti di analisi dati complessi e professionali.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
   "instructor_image": "/images/profile.jpg",
-  "duration": "10 settimane",
-  "level": "Principiante/Intermedio",
+  "duration": "16 settimane",
+  "level": "Principiante/Intermedio/Avanzato",
   "category": "Data Science",
-  "price": "€499",
+  "price": "€699",
   "image_url": "https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg",
   "learning_objectives": [
     {
@@ -20,20 +20,36 @@
       "description": "Array multidimensionali, operazioni vettoriali e algebra lineare"
     },
     {
-      "objective": "Visualizzazione dati",
-      "description": "Creare grafici professionali con Matplotlib e Seaborn"
+      "objective": "Visualizzazione dati professionale",
+      "description": "Creare dashboard e grafici interattivi con Matplotlib, Seaborn e Plotly"
     },
     {
-      "objective": "Analisi Esplorativa (EDA)",
-      "description": "Tecniche per esplorare, pulire e comprendere i dati"
+      "objective": "Analisi Statistica",
+      "description": "Applicare test statistici e tecniche inferenziali ai dati"
     },
     {
-      "objective": "Progetti reali",
-      "description": "Applicare le competenze su dataset del mondo reale"
+      "objective": "Serie Temporali",
+      "description": "Analizzare e prevedere dati temporali"
     },
     {
-      "objective": "Best practices",
-      "description": "Codice pulito, efficiente e professionale"
+      "objective": "Web Scraping",
+      "description": "Estrarre dati dal web in modo etico e legale"
+    },
+    {
+      "objective": "API e Database",
+      "description": "Integrare dati da diverse fonti"
+    },
+    {
+      "objective": "Big Data con Python",
+      "description": "Gestire dataset di grandi dimensioni"
+    },
+    {
+      "objective": "Reporting Automatizzato",
+      "description": "Creare report dinamici e dashboard"
+    },
+    {
+      "objective": "Best practices professionali",
+      "description": "Codice pulito, versionamento, testing e deployment"
     }
   ],
   "prerequisites": [
@@ -245,9 +261,390 @@
     },
     {
       "id": 6,
-      "title": "Progetto Finale",
-      "description": "Applicare tutte le competenze su un progetto reale",
+      "title": "Statistica Inferenziale e Test",
+      "description": "Applicare tecniche statistiche per trarre conclusioni dai dati",
       "estimated_hours": "8 ore",
+      "lessons": [
+        {
+          "id": 27,
+          "title": "Fondamenti di probabilità",
+          "description": "Distribuzioni, teorema centrale del limite",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 28,
+          "title": "Test di ipotesi",
+          "description": "t-test, chi-quadrato, ANOVA",
+          "duration": "55 min",
+          "is_free": false
+        },
+        {
+          "id": 29,
+          "title": "Intervalli di confidenza",
+          "description": "Calcolare e interpretare intervalli di confidenza",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 30,
+          "title": "P-value e significatività statistica",
+          "description": "Comprendere e comunicare i risultati statistici",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 31,
+          "title": "A/B Testing",
+          "description": "Progettare ed analizzare esperimenti",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 32,
+          "title": "Regressione lineare",
+          "description": "Modelli predittivi e interpretazione dei risultati",
+          "duration": "60 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Analisi Serie Temporali",
+      "description": "Lavorare con dati temporali e fare previsioni",
+      "estimated_hours": "7 ore",
+      "lessons": [
+        {
+          "id": 33,
+          "title": "Introduzione alle serie temporali",
+          "description": "Datetime in pandas e manipolazione date",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 34,
+          "title": "Resampling e rolling windows",
+          "description": "Aggregazioni temporali e medie mobili",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 35,
+          "title": "Trend, stagionalità e decomposizione",
+          "description": "Analizzare componenti delle serie temporali",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 36,
+          "title": "Autocorrelazione e stazionarietà",
+          "description": "Test di stazionarietà e ACF/PACF",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 37,
+          "title": "Forecasting con modelli ARIMA",
+          "description": "Previsioni su serie temporali",
+          "duration": "65 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Web Scraping e API",
+      "description": "Raccogliere dati dal web e da API",
+      "estimated_hours": "6 ore",
+      "lessons": [
+        {
+          "id": 38,
+          "title": "Etica e legalità del web scraping",
+          "description": "robots.txt, termini di servizio, best practices",
+          "duration": "25 min",
+          "is_free": false
+        },
+        {
+          "id": 39,
+          "title": "BeautifulSoup per HTML parsing",
+          "description": "Estrarre dati da pagine web statiche",
+          "duration": "55 min",
+          "is_free": false
+        },
+        {
+          "id": 40,
+          "title": "Requests e API REST",
+          "description": "Interagire con API pubbliche",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 41,
+          "title": "Selenium per siti dinamici",
+          "description": "Scraping di contenuti JavaScript",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 42,
+          "title": "Rate limiting e gestione errori",
+          "description": "Scraping robusto e rispettoso",
+          "duration": "30 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Database e SQL con Python",
+      "description": "Integrare database nelle analisi",
+      "estimated_hours": "5 ore",
+      "lessons": [
+        {
+          "id": 43,
+          "title": "SQL fondamentali",
+          "description": "SELECT, WHERE, JOIN, GROUP BY",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 44,
+          "title": "SQLite con Python",
+          "description": "Database embedded per analisi locali",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 45,
+          "title": "Pandas e SQL",
+          "description": "read_sql, to_sql e query dirette",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 46,
+          "title": "PostgreSQL e MySQL",
+          "description": "Connettersi a database professionali",
+          "duration": "40 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Visualizzazioni Avanzate e Dashboard",
+      "description": "Creare visualizzazioni interattive e dashboard",
+      "estimated_hours": "7 ore",
+      "lessons": [
+        {
+          "id": 47,
+          "title": "Plotly per grafici interattivi",
+          "description": "Grafici con zoom, hover e interattività",
+          "duration": "55 min",
+          "is_free": false
+        },
+        {
+          "id": 48,
+          "title": "Dashboard con Plotly Dash",
+          "description": "Creare web app per visualizzare dati",
+          "duration": "70 min",
+          "is_free": false
+        },
+        {
+          "id": 49,
+          "title": "Streamlit per rapid prototyping",
+          "description": "Dashboard veloci e intuitive",
+          "duration": "60 min",
+          "is_free": false
+        },
+        {
+          "id": 50,
+          "title": "Best practices per data storytelling",
+          "description": "Comunicare insights in modo efficace",
+          "duration": "35 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Performance e Big Data",
+      "description": "Ottimizzare codice e gestire grandi dataset",
+      "estimated_hours": "6 ore",
+      "lessons": [
+        {
+          "id": 51,
+          "title": "Profiling del codice",
+          "description": "Identificare bottleneck nelle performance",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 52,
+          "title": "Ottimizzazione pandas",
+          "description": "Dtypes, chunking, e tecniche avanzate",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 53,
+          "title": "Dask per dataset grandi",
+          "description": "Parallel computing con API simile a pandas",
+          "duration": "60 min",
+          "is_free": false
+        },
+        {
+          "id": 54,
+          "title": "Parquet e formati efficienti",
+          "description": "Salvare e caricare dati in modo ottimale",
+          "duration": "35 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Text Analytics e NLP Base",
+      "description": "Analizzare dati testuali",
+      "estimated_hours": "5 ore",
+      "lessons": [
+        {
+          "id": 55,
+          "title": "Preprocessing del testo",
+          "description": "Pulizia, tokenizzazione, stemming",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 56,
+          "title": "Analisi di frequenza e word clouds",
+          "description": "Visualizzare pattern nei testi",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 57,
+          "title": "Sentiment analysis",
+          "description": "Analizzare opinioni e sentimenti",
+          "duration": "50 min",
+          "is_free": false
+        },
+        {
+          "id": 58,
+          "title": "Topic modeling con LDA",
+          "description": "Scoprire temi nascosti nei documenti",
+          "duration": "55 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Reporting e Automazione",
+      "description": "Automatizzare analisi e report",
+      "estimated_hours": "4 ore",
+      "lessons": [
+        {
+          "id": 59,
+          "title": "Report con Jupyter Notebooks",
+          "description": "nbconvert e template personalizzati",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 60,
+          "title": "PDF e Excel automatici",
+          "description": "Generare report in vari formati",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 61,
+          "title": "Scheduling con cron e task schedulers",
+          "description": "Automatizzare pipeline di analisi",
+          "duration": "35 min",
+          "is_free": false
+        },
+        {
+          "id": 62,
+          "title": "Email automatiche con risultati",
+          "description": "Inviare report via email",
+          "duration": "30 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Best Practices Professionali",
+      "description": "Lavorare come un vero Data Scientist",
+      "estimated_hours": "4 ore",
+      "lessons": [
+        {
+          "id": 63,
+          "title": "Git e version control",
+          "description": "Versionare codice e collaborare",
+          "duration": "45 min",
+          "is_free": false
+        },
+        {
+          "id": 64,
+          "title": "Virtual environments e requirements",
+          "description": "Gestire dipendenze dei progetti",
+          "duration": "30 min",
+          "is_free": false
+        },
+        {
+          "id": 65,
+          "title": "Testing e debugging",
+          "description": "Scrivere codice robusto",
+          "duration": "40 min",
+          "is_free": false
+        },
+        {
+          "id": 66,
+          "title": "Documentazione e code style",
+          "description": "PEP8, docstrings, README",
+          "duration": "35 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Casi Studio Reali",
+      "description": "Analisi complete su dataset del mondo reale",
+      "estimated_hours": "8 ore",
+      "lessons": [
+        {
+          "id": 67,
+          "title": "Caso studio: E-commerce analytics",
+          "description": "Analisi vendite, customer segmentation",
+          "duration": "90 min",
+          "is_free": false
+        },
+        {
+          "id": 68,
+          "title": "Caso studio: Financial data analysis",
+          "description": "Analisi mercati finanziari e risk assessment",
+          "duration": "85 min",
+          "is_free": false
+        },
+        {
+          "id": 69,
+          "title": "Caso studio: Healthcare analytics",
+          "description": "Analisi dati sanitari e pattern discovery",
+          "duration": "80 min",
+          "is_free": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Progetto Finale",
+      "description": "Applicare tutte le competenze su un progetto completo",
+      "estimated_hours": "10 ore",
       "lessons": [
         {
           "id": 23,
@@ -276,23 +673,77 @@
           "description": "Come comunicare i tuoi insights",
           "duration": "30 min",
           "is_free": false
+        },
+        {
+          "id": 70,
+          "title": "Portfolio e career tips",
+          "description": "Prepararsi per il mercato del lavoro",
+          "duration": "40 min",
+          "is_free": false
         }
       ]
     }
   ],
   "certification": true,
-  "certificate_description": "Riceverai un certificato digitale verificabile che attesta il completamento del corso e le competenze acquisite in Python per Data Science.",
+  "certificate_description": "Riceverai un certificato digitale verificabile che attesta il completamento del corso e le competenze acquisite in Python per Data Science, incluse analisi statistiche avanzate, visualizzazioni professionali e best practices.",
   "target_audience": [
     "Aspiranti Data Scientist",
     "Analisti che vogliono passare a Python",
     "Sviluppatori che vogliono entrare nella Data Science",
     "Studenti di informatica o statistica",
-    "Professionisti che lavorano con i dati"
+    "Professionisti che lavorano con i dati",
+    "Business Analyst che vogliono skill tecniche avanzate"
   ],
   "tools_required": [
     "Computer (Windows, Mac o Linux)",
     "Connessione internet",
     "Python 3.8+ (fornito tramite Anaconda)",
-    "4GB RAM minimo (8GB consigliato)"
+    "8GB RAM minimo (16GB consigliato per moduli avanzati)"
+  ],
+  "average_rating": 4.8,
+  "reviews": [
+    {
+      "student_name": "Elena Bianchi",
+      "rating": 5,
+      "date": "15 dicembre 2024",
+      "comment": "Finalmente un corso che spiega pandas in modo chiaro! Venivo da R e il passaggio a Python sembrava complicato, ma questo corso mi ha fatto capire tutto. I progetti pratici sono ottimi e Lorenzo spiega con esempi concreti. Ora uso Python quotidianamente per le mie analisi.",
+      "verified": true
+    },
+    {
+      "student_name": "Andrea Colombo",
+      "rating": 5,
+      "date": "8 dicembre 2024",
+      "comment": "Eccellente per chi vuole entrare nella Data Science. La struttura è perfetta: ogni modulo costruisce sul precedente. Le visualizzazioni con Seaborn sono spiegate benissimo. Il progetto finale su dataset reale mi ha dato la sicurezza per candidarmi a posizioni di Data Analyst.",
+      "verified": true
+    },
+    {
+      "student_name": "Francesca Ricci",
+      "rating": 5,
+      "date": "2 dicembre 2024",
+      "comment": "Ho provato diversi corsi su Data Science ma questo è il migliore. Non si limita alla teoria ma ti fa sporcare le mani con codice vero. La parte su EDA è particolarmente utile. Lorenzo risponde velocemente alle domande e la community è attiva.",
+      "verified": true
+    },
+    {
+      "student_name": "Marco Esposito",
+      "rating": 4,
+      "date": "28 novembre 2024",
+      "comment": "Ottimo corso, molto pratico e ben strutturato. Le spiegazioni sono chiare e i notebook forniti sono utilissimi per ripassare. Unica nota: avrei apprezzato più contenuti su machine learning applicato, ma capisco che non era l'obiettivo principale del corso.",
+      "verified": true
+    },
+    {
+      "student_name": "Valentina Greco",
+      "rating": 5,
+      "date": "20 novembre 2024",
+      "comment": "Perfetto per principianti con conoscenze base di Python. I concetti complessi vengono semplificati senza perdere rigore. La sezione su NumPy e pandas è spiegata in modo magistrale. Dopo questo corso mi sento pronta per affrontare progetti di analisi dati reali.",
+      "verified": false
+    }
+  ],
+  "bonus_materials": [
+    "Cheatsheet completi per pandas, NumPy e Matplotlib",
+    "Template di progetti pronti all'uso",
+    "Dataset curati per esercitazioni",
+    "Accesso a community Slack privata",
+    "Sessioni Q&A mensili live con Lorenzo",
+    "Aggiornamenti gratuiti ai contenuti del corso"
   ]
 }

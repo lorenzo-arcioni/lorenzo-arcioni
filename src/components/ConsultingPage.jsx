@@ -48,7 +48,7 @@ const ConsultingPage = ({ onBack }) => {
       ]
     },
     {
-      title: 'Mentorship & Formazione 1-on-1',
+      title: 'Mentorship 1-on-1',
       icon: Shield,
       description: 'Percorsi personalizzati di crescita professionale in ML e Data Science.',
       features: [

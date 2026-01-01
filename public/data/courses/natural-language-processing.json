@@ -691,5 +691,43 @@
     "Google Colab per GPU cloud",
     "16GB RAM minimo",
     "Esperienza con ML e Deep Learning"
-  ]
+  ],
+  "average_rating": 4.9,
+"reviews": [
+  {
+    "student_name": "Davide Moretti",
+    "rating": 5,
+    "date": "12 dicembre 2024",
+    "comment": "Probabilmente il miglior corso su NLP in italiano. La progressione da tecniche classiche a transformer è perfetta. La spiegazione di BERT e GPT è cristallina. Ho implementato un chatbot per la mia azienda grazie a questo corso. Valore incredibile per il prezzo.",
+    "verified": true
+  },
+  {
+    "student_name": "Chiara Romano",
+    "rating": 5,
+    "date": "5 dicembre 2024",
+    "comment": "Corso avanzato ma accessibile. Lorenzo riesce a spiegare concetti complessi come l'attention mechanism in modo comprensibile. La sezione su Hugging Face è oro puro - ora uso i modelli pre-trained con sicurezza. Progetti pratici eccellenti.",
+    "verified": true
+  },
+  {
+    "student_name": "Roberto Santoro",
+    "rating": 5,
+    "date": "29 novembre 2024",
+    "comment": "Ho una laurea in linguistica computazionale e questo corso mi ha aperto gli occhi sulle applicazioni pratiche moderne. Il modulo su LLM e prompt engineering è aggiornato e rilevante. La parte su RAG è stata particolarmente utile per il mio lavoro.",
+    "verified": true
+  },
+  {
+    "student_name": "Giulia Fontana",
+    "rating": 4,
+    "date": "22 novembre 2024",
+    "comment": "Contenuto di altissima qualità. Copre tutto dal text preprocessing ai transformer. Unico appunto: alcuni moduli sono molto densi e richiedono tempo per essere digeriti. Ma la profondità è anche il punto di forza del corso. Consigliato per chi vuole specializzarsi in NLP.",
+    "verified": true
+  },
+  {
+    "student_name": "Lorenzo Marchetti",
+    "rating": 5,
+    "date": "15 novembre 2024",
+    "comment": "Finalmente un corso che va oltre i tutorial superficiali. La teoria è bilanciata perfettamente con la pratica. Il progetto di sentiment analysis e quello sul chatbot sono stati sfidanti ma gratificanti. Ora lavoro come NLP Engineer grazie a questo corso.",
+    "verified": true
+  }
+]
 }

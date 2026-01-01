@@ -649,5 +649,43 @@
     "Jupyter Notebook",
     "4GB RAM minimo",
     "Conoscenza base di Python"
-  ]
+  ],
+  "average_rating": 4.7,
+"reviews": [
+  {
+    "student_name": "Alessandro Caruso",
+    "rating": 5,
+    "date": "10 dicembre 2024",
+    "comment": "Questo corso ha riempito tutti i gap matematici che avevo. Avevo imparato ML in modo pratico ma non capivo veramente cosa succedesse sotto. Ora capisco backpropagation, perché funziona gradient descent, e posso leggere paper scientifici. Investimento che vale ogni centesimo.",
+    "verified": true
+  },
+  {
+    "student_name": "Martina Lombardi",
+    "rating": 5,
+    "date": "3 dicembre 2024",
+    "comment": "Eccellente per chi come me veniva da un background non matematico. Lorenzo spiega algebra lineare e calcolo in modo accessibile ma rigoroso. Le implementazioni NumPy aiutano a collegare teoria e pratica. Ora posso affrontare corsi avanzati di ML con sicurezza.",
+    "verified": true
+  },
+  {
+    "student_name": "Stefano Vitale",
+    "rating": 4,
+    "date": "27 novembre 2024",
+    "comment": "Molto completo e ben strutturato. La matematica dietro PCA, SVD e neural networks è spiegata chiaramente. Alcune parti sono impegnative (specialmente eigenvalues) ma ne vale la pena. Consiglio di prendersi tempo e fare tutti gli esercizi.",
+    "verified": true
+  },
+  {
+    "student_name": "Federica Bruno",
+    "rating": 5,
+    "date": "19 novembre 2024",
+    "comment": "Ho una laurea in economia e mi mancavano le basi matematiche per ML. Questo corso è stato perfetto per colmare il gap. La sezione su probabilità e statistiche è particolarmente utile. Implementare neural network da zero usando solo la matematica è stato illuminante.",
+    "verified": true
+  },
+  {
+    "student_name": "Giovanni Ferrara",
+    "rating": 4,
+    "date": "12 novembre 2024",
+    "comment": "Ottimo corso che ti fa capire veramente la matematica dietro ML. Non è un corso facile - richiede impegno e pratica - ma alla fine ti dà una comprensione profonda. Forse alcuni argomenti potrebbero essere approfonditi ulteriormente, ma nel complesso è eccellente.",
+    "verified": false
+  }
+]
 }

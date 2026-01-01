@@ -649,5 +649,43 @@
     "Google Colab per GPU cloud",
     "16GB RAM minimo",
     "Esperienza con Deep Learning"
-  ]
+  ],
+"average_rating": 4.8,
+"reviews": [
+  {
+    "student_name": "Daniele Costa",
+    "rating": 5,
+    "date": "11 dicembre 2024",
+    "comment": "Fantastico per chi vuole specializzarsi in Computer Vision. Parte da OpenCV classico e arriva a Vision Transformers. I progetti su object detection e face recognition sono molto pratici. Ho implementato un sistema di riconoscimento facciale per la mia startup grazie a questo corso.",
+    "verified": true
+  },
+  {
+    "student_name": "Sara Battaglia",
+    "rating": 5,
+    "date": "4 dicembre 2024",
+    "comment": "Corso completo che bilancia perfettamente teoria e pratica. La sezione su YOLO è spiegata benissimo e il progetto su custom object detector è stato illuminante. La parte su segmentation con U-Net è particolarmente utile. Contenuto aggiornato con le ultime architetture.",
+    "verified": true
+  },
+  {
+    "student_name": "Antonio Serra",
+    "rating": 5,
+    "date": "27 novembre 2024",
+    "comment": "Lavoravo già con immagini ma in modo superficiale. Questo corso mi ha dato una comprensione profonda. Il modulo su GANs e image generation è affascinante. Apprezzo molto la sezione su deployment e optimization - aspetti spesso trascurati ma essenziali per produzione.",
+    "verified": true
+  },
+  {
+    "student_name": "Elisa Monti",
+    "rating": 4,
+    "date": "20 novembre 2024",
+    "comment": "Ottimo corso con progetti molto pratici. La spiegazione delle CNN e delle varie architetture è chiara. L'unico appunto è che alcuni moduli richiedono una GPU potente (ho usato Colab). Ma la qualità del contenuto vale assolutamente il prezzo.",
+    "verified": true
+  },
+  {
+    "student_name": "Francesco Grassi",
+    "rating": 5,
+    "date": "13 novembre 2024",
+    "comment": "Il corso che cercavo per specializzarmi in CV. Copre tutto: dalle basi di image processing alle architetture transformer per vision. I progetti sono vari e interessanti. La sezione su video analysis è un bonus fantastico. Ora mi sento pronto per ruoli specializzati in Computer Vision.",
+    "verified": false
+  }
+]
 }

@@ -13,7 +13,8 @@ import {
   Laptop,
   Loader2,
   Download,
-  X
+  X,
+  Star
 } from 'lucide-react';
 
 const CourseDetailPage = ({ courseId, onBack }) => {
@@ -145,12 +146,12 @@ const CourseDetailPage = ({ courseId, onBack }) => {
                     <Download className="w-6 h-6 text-gray-900" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900">
-                    Scarica la Brochure
+                    Ottieni il programma
                   </h3>
                 </div>
                 
                 <p className="text-gray-600 mb-6">
-                  Inserisci il tuo indirizzo email per ricevere la brochure completa del corso.
+                  Inserisci il tuo indirizzo email per ricevere il programma completo del corso.
                 </p>
                 
                 <div className="mb-4">
@@ -227,7 +228,7 @@ const CourseDetailPage = ({ courseId, onBack }) => {
                   Brochure Inviata!
                 </h3>
                 <p className="text-gray-600">
-                  Controlla la tua email per scaricare la brochure.
+                  Controlla la tua email per scaricare il programma.
                 </p>
               </div>
             )}
@@ -439,7 +440,7 @@ const CourseDetailPage = ({ courseId, onBack }) => {
                   className="w-full px-6 py-4 bg-white text-gray-900 font-semibold rounded-lg border-2 border-gray-900 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2 mb-4"
                 >
                   <Download className="w-5 h-5" />
-                  Scarica la Brochure
+                  Ottieni il programma
                 </button>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
@@ -550,6 +551,108 @@ const CourseDetailPage = ({ courseId, onBack }) => {
             )}
           </div>
         </div>
+
+        {/* Reviews Section */}
+        {courseData.reviews && courseData.reviews.length > 0 && (
+          <div className="mt-12 bg-gray-50 rounded-lg border border-gray-200 p-6 sm:p-8">
+            <div className="mb-8">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">
+                Recensioni degli studenti
+              </h2>
+              
+              {courseData.average_rating && (
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-6 pb-6 border-b border-gray-200">
+                  <div className="text-center">
+                    <div className="text-5xl font-bold text-gray-900 mb-2">
+                      {courseData.average_rating.toFixed(1)}
+                    </div>
+                    <div className="flex items-center justify-center gap-1 mb-1">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Star 
+                          key={star}
+                          className={`w-5 h-5 ${
+                            star <= Math.round(courseData.average_rating)
+                              ? 'fill-yellow-400 text-yellow-400'
+                              : 'text-gray-300'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      {courseData.reviews.length} recensioni
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 w-full">
+                    {[5, 4, 3, 2, 1].map((rating) => {
+                      const count = courseData.reviews.filter(r => r.rating === rating).length;
+                      const percentage = (count / courseData.reviews.length) * 100;
+                      return (
+                        <div key={rating} className="flex items-center gap-3 mb-2">
+                          <span className="text-sm text-gray-600 w-12">
+                            {rating} stelle
+                          </span>
+                          <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div 
+                              className="h-full bg-yellow-400"
+                              style={{ width: `${percentage}%` }}
+                            />
+                          </div>
+                          <span className="text-sm text-gray-600 w-8">
+                            {count}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-6">
+              {courseData.reviews.map((review, index) => (
+                <div key={index} className="bg-white rounded-lg border border-gray-200 p-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-700 font-semibold text-lg flex-shrink-0">
+                      {review.student_name.charAt(0).toUpperCase()}
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-gray-900">
+                          {review.student_name}
+                        </h4>
+                        <span className="text-sm text-gray-500">
+                          {review.date}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <Star 
+                            key={star}
+                            className={`w-4 h-4 ${
+                              star <= review.rating
+                                ? 'fill-yellow-400 text-yellow-400'
+                                : 'text-gray-300'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <p className="text-gray-700 leading-relaxed">
+                        {review.comment}
+                      </p>
+                      {review.verified && (
+                        <div className="mt-3 inline-flex items-center gap-1 px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold border border-green-200">
+                          <CheckCircle className="w-3 h-3" />
+                          Acquisto verificato
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

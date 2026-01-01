@@ -686,5 +686,43 @@
     "Editor di testo o IDE (VS Code consigliato)",
     "4GB RAM minimo",
     "Connessione internet"
-  ]
+  ],
+  "average_rating": 4.7,
+"reviews": [
+  {
+    "student_name": "Marco Bellini",
+    "rating": 5,
+    "date": "18 dicembre 2024",
+    "comment": "Corso eccellente per chi inizia con Python! Le spiegazioni sono chiare e gli esempi pratici mi hanno aiutato a capire concetti che sembravano complessi. Il progetto finale è stato molto stimolante e ora mi sento sicuro nell'usare Python per i miei progetti personali.",
+    "verified": true
+  },
+  {
+    "student_name": "Giulia Rossi",
+    "rating": 5,
+    "date": "10 dicembre 2024",
+    "comment": "Ho seguito molti corsi online ma questo è decisamente tra i migliori. L'istruttore spiega con passione e competenza, gli esercizi sono ben strutturati e la community è molto attiva. In poche settimane sono passata da zero a scrivere i miei primi script automatizzati. Consigliatissimo!",
+    "verified": true
+  },
+  {
+    "student_name": "Alessandro Conti",
+    "rating": 4,
+    "date": "5 dicembre 2024",
+    "comment": "Ottimo corso per principianti. Le prime lezioni sono molto accessibili e il ritmo è graduale. L'unica cosa che migliorerei sarebbe aggiungere più esercizi avanzati nella parte finale, ma nel complesso sono molto soddisfatto dell'acquisto. Il supporto via Q&A è stato prezioso quando avevo dubbi.",
+    "verified": true
+  },
+  {
+    "student_name": "Sofia Martini",
+    "rating": 5,
+    "date": "28 novembre 2024",
+    "comment": "Dopo aver provato ad imparare Python da sola con tutorial YouTube, questo corso ha fatto la differenza. Finalmente ho una comprensione solida delle basi e delle best practices. I moduli su data structures e OOP sono spiegati in modo cristallino. Vale ogni centesimo!",
+    "verified": true
+  },
+  {
+    "student_name": "Luca Ferrari",
+    "rating": 4,
+    "date": "22 novembre 2024",
+    "comment": "Corso molto ben fatto con contenuti di qualità. Ho apprezzato particolarmente i video brevi e mirati, perfetti per chi come me studia la sera dopo il lavoro. Le risorse scaricabili sono utili per ripassare. Unico suggerimento: sarebbe bello avere più progetti pratici intermedi oltre al progetto finale.",
+    "verified": false
+  }
+]
 }

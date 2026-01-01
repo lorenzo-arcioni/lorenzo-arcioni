@@ -15,6 +15,7 @@ import CertificationsPage from './components/CertificationsPage';
 import SocialCommunityPage from './components/SocialCommunityPage';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import FeaturedCoursesSection from './components/FeaturedCoursesSection';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -31,6 +32,10 @@ function App() {
         setTimeout(() => {
           window.scrollTo({ top: 0, behavior: 'instant' });
         }, 0);
+      } else {
+        // Se non c'è stato salvato (es. primo caricamento), vai alla home
+        setCurrentPage('home');
+        setSelectedCourseId(null);
       }
     };
 
@@ -46,6 +51,7 @@ function App() {
 
   const handleNavigate = (page) => {
     setCurrentPage(page);
+    setSelectedCourseId(null);
     window.history.pushState({ page }, '', `#${page}`);
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -63,6 +69,7 @@ function App() {
 
   const handleBackToServices = () => {
     setCurrentPage('home');
+    setSelectedCourseId(null);
     window.history.pushState({ page: 'home' }, '', window.location.pathname);
     setTimeout(() => {
       if (servicesRef.current) {
@@ -73,12 +80,28 @@ function App() {
 
   const handleBackToPortfolio = () => {
     setCurrentPage('home');
+    setSelectedCourseId(null);
     window.history.pushState({ page: 'home' }, '', window.location.pathname);
     setTimeout(() => {
       if (portfolioRef.current) {
         portfolioRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 100);
+  };
+
+  // Funzione generica per tornare indietro
+  const handleBack = () => {
+    window.history.back();
+  };
+
+  // Funzione specifica per tornare alla pagina corsi
+  const handleBackToCourses = () => {
+    setCurrentPage('corsi');
+    setSelectedCourseId(null);
+    window.history.pushState({ page: 'corsi' }, '', '#corsi');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }, 0);
   };
 
   // Services pages
@@ -96,9 +119,7 @@ function App() {
       <div className="min-h-screen bg-gray-50">
         <CourseDetailPage 
           courseId={selectedCourseId} 
-          onBack={() => {
-            window.history.back();
-          }} 
+          onBack={handleBackToCourses}
         />
         <Footer />
       </div>
@@ -108,7 +129,7 @@ function App() {
   if (currentPage === 'formazione-aziendale') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <CorporateTrainingPage onBack={handleBackToServices} onCourseSelect={handleCourseNavigate} />
+        <CorporateTrainingPage onBack={handleBack} onCourseSelect={handleCourseNavigate} />
         <Footer />
       </div>
     );
@@ -117,7 +138,7 @@ function App() {
   if (currentPage === 'consulenze') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <ConsultingPage onBack={handleBackToServices} />
+        <ConsultingPage onBack={handleBack} />
         <Footer />
       </div>
     );
@@ -127,7 +148,7 @@ function App() {
   if (currentPage === 'progetti') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <ProjectsPage onBack={handleBackToPortfolio} />
+        <ProjectsPage onBack={handleBack} />
         <Footer />
       </div>
     );
@@ -136,7 +157,7 @@ function App() {
   if (currentPage === 'pubblicazioni') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <PublicationsPage onBack={handleBackToPortfolio} />
+        <PublicationsPage onBack={handleBack} />
         <Footer />
       </div>
     );
@@ -145,7 +166,7 @@ function App() {
   if (currentPage === 'certificazioni') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <CertificationsPage onBack={handleBackToPortfolio} />
+        <CertificationsPage onBack={handleBack} />
         <Footer />
       </div>
     );
@@ -154,7 +175,7 @@ function App() {
   if (currentPage === 'social') {
     return (
       <div className="min-h-screen bg-gray-50">
-        <SocialCommunityPage onBack={handleBackToPortfolio} />
+        <SocialCommunityPage onBack={handleBack} />
         <Footer />
       </div>
     );
@@ -174,6 +195,17 @@ function App() {
         <div ref={servicesRef}>
           <ServicesHubSection onNavigate={handleNavigate} />
         </div>
+
+        {/* Featured Courses */}
+        <FeaturedCoursesSection 
+          onCourseSelect={(courseId) => {
+            if (courseId === 'all') {
+              handleNavigate('corsi');
+            } else {
+              handleCourseNavigate(courseId);
+            }
+          }} 
+        />
         
         {/* Portfolio Hub */}
         <div ref={portfolioRef}>
