@@ -4,7 +4,7 @@
   "full_description": "Questo corso completo ti guiderà attraverso l'intero ecosistema del Natural Language Processing. Partendo dalle tecniche classiche di text processing (tokenization, stemming, TF-IDF), passerai ai modelli di deep learning (RNN, LSTM) fino alle architetture transformer moderne (BERT, GPT) e Large Language Models.\n\nIl corso bilancia teoria e pratica: imparerai come funzionano gli algoritmi NLP ma soprattutto li applicherai a problemi reali come sentiment analysis, named entity recognition, text generation, question answering e chatbot. Include progetti hands-on con Hugging Face, spaCy e framework moderni. Ideale per chi vuole specializzarsi in NLP o per data scientists che lavorano con dati testuali.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "10 settimane",
   "level": "Intermedio/Avanzato",
   "category": "Natural Language Processing",

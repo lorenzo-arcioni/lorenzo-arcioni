@@ -121,7 +121,7 @@ const Header = () => {
         <div className="flex flex-col items-center text-center">
           <div className="mb-6 sm:mb-8">
             <img 
-              src="/images/selfie.jpeg" 
+              src="/images/profile.jpeg" 
               alt="Lorenzo Arcioni"
               className="w-32 h-32 sm:w-44 sm:h-44 md:w-56 md:h-56 rounded-full object-cover border-4 border-white shadow-2xl"
             />

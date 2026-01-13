@@ -4,7 +4,7 @@
   "full_description": "Questo corso completo ti guiderà attraverso l'intero ecosistema Python per Data Science. Imparerai a manipolare dati con pandas, eseguire calcoli numerici con NumPy, creare visualizzazioni professionali con Matplotlib e Seaborn, applicare tecniche statistiche avanzate, lavorare con serie temporali, gestire big data e molto altro.\n\nIl corso è strutturato con un approccio pratico: ogni concetto teorico viene immediatamente applicato a casi d'uso reali attraverso progetti hands-on. Alla fine del corso sarai in grado di affrontare autonomamente progetti di analisi dati complessi e professionali.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "16 settimane",
   "level": "Principiante/Intermedio/Avanzato",
   "category": "Data Science",

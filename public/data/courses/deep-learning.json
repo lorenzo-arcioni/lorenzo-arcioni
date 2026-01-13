@@ -4,7 +4,7 @@
   "full_description": "Questo corso approfondito ti guiderà attraverso il mondo del Deep Learning, dalle fondamenta teoriche alle applicazioni più avanzate. Imparerai non solo a utilizzare framework come TensorFlow e PyTorch, ma a comprendere profondamente come funzionano le reti neurali, quando applicarle e come ottimizzarle.\n\nIl corso copre architetture fondamentali (MLP, CNN, RNN, Transformer), tecniche avanzate di training, regularization, optimization, e include progetti pratici su computer vision, NLP e time series. Perfetto per chi vuole specializzarsi in Deep Learning o per data scientists che vogliono aggiungere neural networks al loro toolkit.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "12 settimane",
   "level": "Avanzato",
   "category": "Deep Learning",

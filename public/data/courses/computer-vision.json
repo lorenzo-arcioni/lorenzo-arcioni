@@ -4,7 +4,7 @@
   "full_description": "Questo corso ti guiderà attraverso l'intero ecosistema della Computer Vision moderna. Partendo dalle tecniche classiche di image processing, imparerai a utilizzare OpenCV per operazioni fondamentali, per poi passare alle architetture deep learning più avanzate per classification, detection, segmentation e generazione di immagini.\n\nIl corso bilancia teoria e pratica: capirai come funzionano le CNN, Vision Transformers e architetture moderne, ma soprattutto implementerai soluzioni su problemi reali. Include progetti su object detection, face recognition, image segmentation e generazione. Ideale per chi vuole specializzarsi in Computer Vision o per ML engineers che lavorano con dati visivi.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "10 settimane",
   "level": "Intermedio/Avanzato",
   "category": "Computer Vision",

@@ -4,7 +4,7 @@
   "full_description": "Questo corso ti fornirà le basi matematiche solide necessarie per comprendere profondamente gli algoritmi di Machine Learning e Deep Learning. Partendo dai fondamenti di algebra lineare, calcolo e probabilità, costruirai la comprensione matematica che sta dietro a neural networks, optimization algorithms, e statistical learning.\n\nIl corso è progettato per essere accessibile ma rigoroso: ogni concetto matematico viene spiegato con esempi pratici e implementazioni in Python/NumPy. Non si tratta di matematica teorica fine a se stessa, ma di comprendere la matematica che serve davvero per fare ML professionalmente. Ideale per autodidatti che hanno imparato ML in modo pratico e vogliono colmare gap teorici, o per chi vuole iniziare ML con solide fondamenta.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "8 settimane",
   "level": "Intermedio",
   "category": "Mathematics",

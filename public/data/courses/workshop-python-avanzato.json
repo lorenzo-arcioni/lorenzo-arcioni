@@ -4,7 +4,7 @@
   "full_description": "Questo workshop intensivo di 1-2 giorni ti porterà oltre le basi di Python per Data Science, concentrandosi su tecniche avanzate e ottimizzazioni professionali. Approfondirai pandas e NumPy con casi d'uso complessi, imparerai strategie di data cleaning per dataset reali e scoprirai come ottimizzare le performance del tuo codice.\n\nIl workshop è strutturato per massimizzare il tempo: sessioni pratiche intensive con esercizi hands-on su problemi reali che affronterai nel tuo lavoro quotidiano. Ideale per chi già conosce le basi e vuole portare le proprie competenze al livello successivo.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "1-2 giorni",
   "level": "Avanzato",
   "category": "Data Science",

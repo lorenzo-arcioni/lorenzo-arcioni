@@ -4,7 +4,7 @@
   "full_description": "Questo corso completo ti fornirà una solida comprensione degli algoritmi e delle strutture dati fondamentali che ogni programmatore dovrebbe conoscere. Partendo dalle basi (array, linked list) arriverai a strutture complesse (alberi, grafi, hash tables) e algoritmi avanzati (dynamic programming, greedy algorithms).\n\nIl corso bilancia teoria e pratica: capirai la complessità computazionale (Big O), imparerai a scegliere la struttura dati giusta per ogni problema, e implementerai tutto in Python. Include centinaia di esercizi pratici e problemi in stile LeetCode/HackerRank per prepararti a interview tecniche. Ideale per chi vuole diventare un programmatore migliore, prepararsi a interview, o costruire fondamenta solide per algoritmi più avanzati in ML e AI.",
   "instructor": "Lorenzo Arcioni",
   "instructor_bio": "Machine Learning Engineer e Data Scientist con oltre 5 anni di esperienza. Specializzato in Python, Machine Learning e formazione tecnica avanzata.",
-  "instructor_image": "/images/profile.jpg",
+  "instructor_image": "/images/profile.jpeg",
   "duration": "12 settimane",
   "level": "Intermedio",
   "category": "Computer Science",
