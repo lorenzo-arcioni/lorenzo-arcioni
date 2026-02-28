@@ -18,6 +18,13 @@ const ExperienceSection = () => {
       description: 'Formazione specialistica in Python, Machine Learning e Data Science per studenti universitari, ricercatori e professionisti. Progettazione e conduzione di percorsi formativi personalizzati con focus su comprensione profonda e problem solving algoritmico.'
     },
     {
+      logo: '/images/medium.png',
+      title: 'Machine LEarning Technical Writer',
+      role: 'Freelance - Python & Machine Learning',
+      period: '2023 - Presente',
+      description: 'Scrittore di articoli Medium su Python, Machine Learning e Data Science. Contributo a una community professionisti con contenuti di qualità e utili per la formazione e la ricerca professionale.'
+    },
+    {
       logo: 'https://mistertesi.it/wp-content/uploads/2019/06/La-Sapienza.png',
       title: 'Università La Sapienza',
       role: 'Software Engineer - Stage',
